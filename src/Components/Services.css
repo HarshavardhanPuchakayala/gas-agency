@@ -1,0 +1,91 @@
+.ServicesHeading{
+    font-size: 3rem;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    margin: 3rem auto;
+}
+.ServicesHeading::after{
+    content: "";
+    position: absolute;
+    background-color: skyblue;
+    height: 8px;
+    width: 18%;
+    right: 40%;
+    bottom: 0;
+    border-radius: 50%;
+}
+.ServicesGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.ServiceCard{
+    border: 1px solid rgb(162, 158, 158);
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+.ServiceCard:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
+.ServiceCard img{
+    display: flex;
+    width: 100%;
+    border-radius: 0.7rem;
+    height: 300px;
+}
+.ServicesContent{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    gap: 0.5rem;
+}
+.ServicesContent h1{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+.ServicesContent p{
+    font-size: 1rem;
+}
+.ServicesContent a{
+    padding: 0.5rem 0.9rem;
+    width: 28%;
+    color: black;
+    font-weight: 600;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border-radius: 0.7rem;
+}
+
+@media screen and (max-width: 800px) {
+    .ServicesHeading::after{
+        width: 40%;
+        right: 30%;
+    }
+    .ServicesGrid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+    .ServicesContent a{
+        width: 40%;
+        text-align: center;
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+    .ServicesHeading::after{
+        width: 60%;
+        right: 20%;
+        border-radius: 30%;
+    }
+    .ServicesGrid{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .ServicesContent a{
+        width: 40%;
+        text-align: center;
+    }
+  }

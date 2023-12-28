@@ -1,0 +1,80 @@
+footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1rem 3rem;
+    background-color: black;
+    align-items: center;
+}
+.Footerlogo{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: white;
+}
+.footerlogoimg{
+    width: 50px;
+    border-radius: 100%;
+    height: 5dvh;
+}
+.footerlogo p{
+    font-size: 1.1rem;
+    width: 50%;
+    color: white;
+    padding-top: 1rem;
+}
+.footerLogoGallery img{
+    display: flex;
+    width: 200px;
+    height: 20dvh;
+}
+.footerHeading{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.footerLists ul{
+    padding-left: 3rem;
+}
+.footerLists ul li{
+    display: flex;
+    padding-bottom: 0.5rem;
+}
+.footerLists ul li a{
+    font-size: 1rem;
+    color: white;
+}
+.footerLists ul li a:hover{
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+    footer{
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    .footerlogo p{
+        width: 90%;
+    }
+    .footerLogoGallery img{
+        display: flex;
+        width: 90%;
+        height: 30dvh;
+    }
+    .footerHeading{
+       text-align: center;
+       padding-bottom: 0.5rem;
+    }
+    .footerLists ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .footerLists ul li{
+        display: flex;
+        padding-bottom: 0.5rem;
+    }
+  }
